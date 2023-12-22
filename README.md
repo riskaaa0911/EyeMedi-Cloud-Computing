@@ -13,11 +13,11 @@
 1. Ensure that Python is installed on your system, then clone the repository and open it using your preferred code editor.
 2. Download the model file in the __.h5__ file format [here](https://drive.google.com/file/d/1j3VYJGPbBqqppTe1MC9rGBKt9Mr3nDIy/view?usp=sharing). Rename the file to "__model.h5__" and move it to the project's root directory.
 3. As the code utilizes Google Cloud Storage (GCS), create your GCS Bucket. Inside the bucket, create a folder named __predict_uploads__. Acquire the credentials file (in .json format) and name it "__mediscan-credentials.json__". Copy this file to the project's root directory.
-5. Navigate to __main.py__, edit the code at line 46, replacing '__mediscan-app__' with the name of the bucket you created in the previous step.
-7. Open the terminal in the project's root directory and execute `pip install -r requirements.txt` to install the necessary dependencies.
-8. Run the application with the command: `python main.py`.
-9. By default, the server will be hosted on localhost using port 5000. Open [http://localhost:5000](http://localhost:5000) in your browser.
-10. If it displays 'OK,' you have successfully launched the predict API.
+4. Navigate to __main.py__, edit the code at line 46, replacing '__mediscan-app__' with the name of the bucket you created in the previous step.
+5. Open the terminal in the project's root directory and execute `pip install -r requirements.txt` to install the necessary dependencies.
+6. Run the application with the command: `python main.py`.
+7. By default, the server will be hosted on localhost using port 5000. Open [http://localhost:5000](http://localhost:5000) in your browser.
+8. If it displays 'OK,' you have successfully launched the predict API.
 
 ### API Application
 1. Clone the repository and open it using your chosen code editor.
@@ -46,14 +46,14 @@ GCP_CLIENT_EMAIL=""
 GCP_PRIVATE_KEY=""
 
 ```
-5. Open the terminal in the project's root directory, then execute `npm install` to install the required dependencies.
-6. Configure the database migrations with the following commands:
+4. Open the terminal in the project's root directory, then execute `npm install` to install the required dependencies.
+5. Configure the database migrations with the following commands:
 `npx sequelize-cli db:create`
 `npx sequelize-cli db:migrate`
 `npx sequelize-cli db:seed:all`
-7. Start the application using the command: `npm run start`.
-8. The server will be hosted on localhost using port 8080. Open [http://localhost:8080](http://localhost:8080) in your browser.
-9. If there are no errors, you have successfully launched the service.
+6. Start the application using the command: `npm run start`.
+7. The server will be hosted on localhost using port 8080. Open [http://localhost:8080](http://localhost:8080) in your browser.
+8. If there are no errors, you have successfully launched the service.
 
 ## Steps to Deploy API with Cloud Run
 ### API Predict
