@@ -46,7 +46,7 @@ GCP_CLIENT_EMAIL=""
 GCP_PRIVATE_KEY=""
 
 ```
-5. Open the terminal in the project's root directory, then execute npm install to install the required dependencies.
+5. Open the terminal in the project's root directory, then execute `npm install` to install the required dependencies.
 6. Configure the database migrations with the following commands:
 `npx sequelize-cli db:create`
 `npx sequelize-cli db:migrate`
