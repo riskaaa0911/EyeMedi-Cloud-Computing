@@ -2,8 +2,11 @@
 
 ## Featured Technologies
 
--   **Cloud Run**
--   **CloudSQL**
+-   **Language** : JavaScript, Python
+-   **Framework** :
+-   **Google Cloud Platform (GCP)** :
+-   **Postman** : 
+-   **Json Web Token (JWT) authentication for login
 
 ## Steps to Run API in Locally
 
