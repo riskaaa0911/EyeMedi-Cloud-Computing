@@ -2,8 +2,8 @@
 
 ## Featured Technologies
 
--   Cloud Run
--   CloudSQL
+-   **Cloud Run**
+-   **CloudSQL**
 
 ## Steps to Run API in Locally
 
