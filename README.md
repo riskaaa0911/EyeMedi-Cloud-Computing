@@ -10,16 +10,14 @@
 
 ## Steps to Run API in Locally
 ### API Predict
-This is a python code, so make sure you have python installed on your system.
-
-1. Clone the repository then open it using your code editor.
-2. Download the model file with the __.h5__ file format (or you can download it manually [here](https://drive.google.com/file/d/1j3VYJGPbBqqppTe1MC9rGBKt9Mr3nDIy/view?usp=sharing)) and name it "__model.h5__" (to match with the scripts), then move it to the root directory of this project.
-3. This code is using Google Cloud Storage, so you have to make your own GCS Bucket, make a folder named __predict_uploads__ inside the bucket, get the credentials file (.json file) and name it "__mediscan-credentials.json__" (to match with the scripts) then copy it to the root directory of this project.
-4. Go to __main.py__ edit the code in line 46, change '__mediscan-app__' with the name of the bucket that you created in the previous step.
-5. Open terminal in the project root directory, then run `pip install -r requirements.txt` to install the dependencies.
-6. Run the app using the command: `python main.py`.
-7. By default, the server will run on the localhost with the port 5000, open [http://localhost:5000](http://localhost:5000) to view it in your browser.
-8. If it shows 'OK' then you have successfully run the predict api.
+1. Ensure that Python is installed on your system, then clone the repository and open it using your preferred code editor.
+2. Download the model file in the __.h5__ file format [here](https://drive.google.com/file/d/1j3VYJGPbBqqppTe1MC9rGBKt9Mr3nDIy/view?usp=sharing). Rename the file to "__model.h5__" and move it to the project's root directory.
+3. As the code utilizes Google Cloud Storage (GCS), create your GCS Bucket. Inside the bucket, create a folder named __predict_uploads__. Acquire the credentials file (in .json format) and name it "__mediscan-credentials.json__". Copy this file to the project's root directory.
+5. Navigate to __main.py__, edit the code at line 46, replacing '__mediscan-app__' with the name of the bucket you created in the previous step.
+7. Open the terminal in the project's root directory and execute `pip install -r requirements.txt` to install the necessary dependencies.
+8. Run the application with the command: `python main.py`.
+9. By default, the server will run on the localhost with the port 5000, open [http://localhost:5000](http://localhost:5000) in your browser.
+10. If it displays 'OK,' you have successfully launched the predict API.
 
 ### API Application
 1. Clone the repository then open it using your code editor.
@@ -61,7 +59,7 @@ GCP_PRIVATE_KEY=""
 1. Same with steps in locally 
 2. Deploy to Cloud Run with command `gcloud run deploy` 
 ### API Application
-1. Same with steps in locally and add file .python-version and fill use version Python
+1. Same with steps in locally and add file .python-version and fill the version of Python you are using
 2. Deploy to Cloud Run with command `gcloud run deploy` 
 
 
