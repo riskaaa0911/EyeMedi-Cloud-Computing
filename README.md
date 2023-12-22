@@ -3,10 +3,10 @@
 ## Featured Technologies
 
 -   **Language** : JavaScript, Python
--   **Framework** : Node.Js Express to create application APIs and Flask API to create ML model APIs (API Predict). The prediction API provides prediction results to the application API, so that the application accesses the prediction API to get eye disease predictions through the application API
--   **Google Cloud Platform (GCP)** : Cloud SQL(MYSQL), CLoud Run, Cloud Storage
+-   **Framework** : Node.Js Express to create application API and Flask API to create ML model API (API Predict). The prediction API provides prediction results to the application API, so that the application accesses the prediction API to get eye disease predictions through the application API
+-   **Google Cloud Platform (GCP)** : Cloud SQL(MYSQL) to store and read data from applications, CLoud Run for deploy API, and Cloud Storage to store image data for predictions.
 -   **Postman** : to test API
--   **Json Web Token (JWT) authentication for login
+-   **Json** Web Token (JWT) authentication for login
 
 ## Steps to Run API in Locally
 
@@ -15,7 +15,7 @@
 3. Glaucoma
 4. Normal
 
-## Steps to Deploy API in Cloud Run
+## Steps to Deploy API with Cloud Run
 
 1. Looking for references dataset
 2. labeling each data
