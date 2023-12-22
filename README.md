@@ -16,43 +16,44 @@
 5. Navigate to __main.py__, edit the code at line 46, replacing '__mediscan-app__' with the name of the bucket you created in the previous step.
 7. Open the terminal in the project's root directory and execute `pip install -r requirements.txt` to install the necessary dependencies.
 8. Run the application with the command: `python main.py`.
-9. By default, the server will run on the localhost with the port 5000, open [http://localhost:5000](http://localhost:5000) in your browser.
+9. By default, the server will be hosted on localhost using port 5000. Open [http://localhost:5000](http://localhost:5000) in your browser.
 10. If it displays 'OK,' you have successfully launched the predict API.
 
 ### API Application
-1. Clone the repository then open it using your code editor.
-2. In the root directory of this project, make a new file named __.env__ to provide the configurations needed.
-3. Provide these details in the __.env__ file:
+1. Clone the repository and open it using your chosen code editor.
+2. Create a new file named .env in the project's root directory to input the necessary configurations.
+3. Populate the .env file with the following details, replacing "" with the appropriate values:
 ```
-# Fill "" with the url of the predict api 
-API_PREDICT=""
-# Fill "" with your database username ex: root
-DB_USERNAME=""
-# Fill "" with your database password
-DB_PASSWORD=""
-# Fill "" with your database host name ex: localhost
-DB_HOSTNAME=""
-# This is the database name, no need to change it
-DB_NAME="db_mediscan"
-# No need to change this
+# JWT key, no need to change this
 JWT_KEY="onpiece12345"
-# Fill "" with the bucket name you created in the previous step
+# Enter your database username (e.g., root)
+DB_USERNAME=""
+# Enter your database password
+DB_PASSWORD=""
+# Specify your database host name (e.g., localhost or IP Public in database Cloud SQL)
+DB_HOSTNAME=""
+# Keep the database name as "db_mediscan"
+DB_NAME="db_mediscan"
+# Provide the URL of the predict API
+API_PREDICT=""
+# Fill with the bucket name created in the previous step
 GCS_BUCKET=""
-# Fill "" with the project_id value from mediscan_credentials.json file
+# Fill with the project_id value from mediscan_credentials.json file
 GCP_PROJECT_ID=""
-# Fill "" with the client_email value from the sa-lindungi-credentials.json file
+# Fill with the client_email value from mediscan-credentials.json file
 GCP_CLIENT_EMAIL=""
-# Fill "" with the private_key value from the sa-lindungi-credentials.json file
+# Fill with the private_key value from the mediscan-credentials.json file
 GCP_PRIVATE_KEY=""
+
 ```
-5. Open terminal in the project root directory, then run `npm install` to install the dependencies.
-6. Run these commands to configure the database migrations:\
-`npx sequelize-cli db:create`\
-`npx sequelize-cli db:migrate`\
+5. Open the terminal in the project's root directory, then execute npm install to install the required dependencies.
+6. Configure the database migrations with the following commands:
+`npx sequelize-cli db:create`
+`npx sequelize-cli db:migrate`
 `npx sequelize-cli db:seed:all`
-7. Run the app using the command: `npm run start`.
-8. The server will run in the localhost with the port 8080, open [http://localhost:8080](http://localhost:8080) to view it in your browser.
-9. If it doesn't show any errors then you have successfully run the service.
+7. Start the application using the command: `npm run start`.
+8. The server will be hosted on localhost using port 8080. Open [http://localhost:8080](http://localhost:8080) in your browser.
+9. If there are no errors, you have successfully launched the service.
 
 ## Steps to Deploy API with Cloud Run
 ### API Predict
