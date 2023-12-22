@@ -3,9 +3,9 @@
 ## Featured Technologies
 
 -   **Language** : JavaScript, Python
--   **Framework** :
--   **Google Cloud Platform (GCP)** :
--   **Postman** : 
+-   **Framework** : Node.Js Express to create application APIs and Flask API to create ML model APIs (API Predict). The prediction API provides prediction results to the application API, so that the application accesses the prediction API to get eye disease predictions through the application API
+-   **Google Cloud Platform (GCP)** : Cloud SQL(MYSQL), CLoud Run, Cloud Storage
+-   **Postman** : to test API
 -   **Json Web Token (JWT) authentication for login
 
 ## Steps to Run API in Locally
